@@ -1,4 +1,5 @@
 import { Clock, Calendar, User, FileText, MoreVertical } from "lucide-react"
+import Link from "next/link"
 
 export default function PastAppointments() {
   const appointments = [
@@ -102,7 +103,9 @@ export default function PastAppointments() {
 
               <div className="mt-4 flex justify-end space-x-3">
                 <button className="px-4 py-2 text-sm rounded-md border border-gray-300 dark:border-gray-600 dark:text-white">
+                  <Link href="/patient/appointments/report">
                   Download Report
+                  </Link>
                 </button>
                 <button className="px-4 py-2 text-sm rounded-md bg-primary text-primary-foreground">
                   Book Follow-up
